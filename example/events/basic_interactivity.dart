@@ -30,7 +30,8 @@ void main() {
     var chart = new PieChart(document.getElementById('chart_div'));
 
     selectHandler(_) {
-      var selectedItem = chart.getSelection()[0];
+      var results = chart.getSelection() as List;
+      var selectedItem =  results[0];
       if (selectedItem != null) {
         var topping = data.getValue(selectedItem['row'], 0);
         window.alert('The user selected ' + topping);

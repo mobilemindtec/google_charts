@@ -23,7 +23,7 @@ abstract class Chart {
   Chart._(element, String chartName, JsObject ctx)
       : jsChart = new JsObject(ctx[chartName], [element]);
 
-  void draw(data, [options = null]) {
+  void draw(data, [options = null, stete = null]) {
     // final data = [['Label', 'Value'], ['A', 0]];
     // var jsTable = ns.callMethod('arrayToDataTable', [new JsObject.jsify(data)]);
     var jsOptions = null;

@@ -5,7 +5,7 @@ class AnnotationChart extends Chart {
 
   }
 
-  void draw(data, [core.Map options = null, state = null]) {
+  void draw(data, [options = null, state = null]) {
     super.draw(data, options);
   }
 

@@ -70,6 +70,10 @@ abstract class Chart {
     jsChart.callMethod('clearChart');
   }
 
+  String getImageURI(){
+    return jsChart.callMethod("getImageURI");
+  }
+
   static Future load({List<String> packages, String version: "current"}) {
     Completer c = new Completer();
     JsObject args;
@@ -176,7 +180,7 @@ abstract class _SelectReadyErrorMouseClickAnimationChart
 abstract class CoreChart extends _SelectReadyErrorMouseClickAnimationChart {
   CoreChart._(element, String chartName) : super._(element, chartName, vis);
 
-  void getImageURI() {}
+  //void getImageURI() {}
 }
 
 class SelectedObject {
